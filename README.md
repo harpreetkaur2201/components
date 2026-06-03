@@ -10,7 +10,6 @@ This project demonstrates the implementation of reusable React components using 
 - Responsive image gallery
 - Consistent visual design and layout
 - Modern hover effects and transitions
-- Clean and organized code structure
 
 ## Components
 
