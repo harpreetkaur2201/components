@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <p>© 2026 Harpreet Kaur</p>
+            <p>&copy; 2026 Harpreet Kaur</p>
         </footer>
     );
 }
