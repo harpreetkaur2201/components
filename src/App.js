@@ -20,14 +20,14 @@ function App() {
     let bannerTitle = 'Be creative';
 
     let bannerText =
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-
-       const galleryImages = [
-    image1,
-    image2,
-    image3,
-    image4
-];
+            'It is a 3D cartoon-style illustration. The image uses smooth shapes, simple features, and bright colors to create a playful digital character look. This style is often used for avatars, apps, websites, and presentations because it feels modern, friendly, and attractive.'
+      
+            const galleryImages = [
+                image1,
+                image2,
+                image3,
+                image4
+            ];
     return (
         <>
             <Header navLinks={navLinks} />

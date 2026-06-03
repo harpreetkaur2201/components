@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import './reset.css';
 
-
 html, body {
     height: 100%;
 }
@@ -11,18 +10,18 @@ body {
     background: #f4f4f4;
     display: flex;
     flex-direction: column;
+    color: #222;
+    line-height: 1.5;
 }
 
 main {
     flex: 1;
 }
 
-
 .container {
-    width: 80%;
+    width: min(1100px, 90%);
     margin: 0 auto;
 }
-
 
 .flex {
     display: flex;
@@ -30,67 +29,89 @@ main {
     align-items: center;
 }
 
-
 header {
-    background: #8f3e04;
-    padding: 20px 0;
+    background: linear-gradient(135deg, #8f3e04, #b85a10);
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 header h1 {
     color: white;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 22px;
     list-style: none;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    position: relative;
+    padding: 6px 0;
+    transition: 0.3s ease;
 }
- nav a:hover{
-    transform: translateY(-3px);
- }
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
 
 .banner {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px 40px;
 }
 
 .banner h2 {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    font-size: 32px;
 }
 
 .banner p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 24px;
+    color: #444;
 }
-
 
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 11px 22px;
     cursor: pointer;
+    border-radius: 8px;
+    font-weight: 500;
     transition: all 0.25s ease;
-    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 .primary {
     background: #4a90e2;
     color: white;
+    box-shadow: 0 6px 14px rgba(74,144,226,0.25);
 }
 
 .primary:hover {
-    background: #799dc3;
-    transform: translateY(-3px);
+    background: #3f7ec4;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 18px rgba(74,144,226,0.35);
 }
 
 .secondary {
@@ -100,46 +121,69 @@ button {
 }
 
 .secondary:hover {
-    background: #a0c7f3;
+    background: #4a90e2;
     color: white;
-    transform: translateY(-3px);
-    border: none;
-
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(74,144,226,0.25);
 }
 
-
 .gallery {
-    width: 80%;
-    margin: 40px auto;
-    padding: 20px 0;
-    background: transparent;
+    width: min(1100px, 90%);
+    margin: 50px auto;
+    padding: 10px 0;
 }
 
 .gallery-row {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
 }
 
 .gallery-row div {
-    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.gallery-row div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .gallery img {
     width: 100%;
-    height: 215px;
+    height: 220px;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
-    border: none;
+    transition: transform 0.4s ease;
 }
 
+.gallery-row div:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-row div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.25), transparent);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.gallery-row div:hover::after {
+    opacity: 1;
+}
 
 footer {
-    background: #8f3e04;
+    background: linear-gradient(135deg, #8f3e04, #b85a10);
     text-align: center;
-    padding: 20px;
-    margin-top: 80px;
+    padding: 22px;
+    margin-top: 100px;
     color: white;
+    font-size: 14px;
+
 }

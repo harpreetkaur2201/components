@@ -9,15 +9,16 @@ function Banner(props) {
             <p>{props.text}</p>
 
             <div className="button-group">
+                   <Button
+                    buttonText="Primary"
+                    buttonStyle="primary"
+                />
+                
                 <Button
                     buttonText="Secondary"
                     buttonStyle="secondary"
                 />
 
-                <Button
-                    buttonText="Primary"
-                    buttonStyle="primary"
-                />
             </div>
 
         </section>
