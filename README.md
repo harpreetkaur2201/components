@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Components Implementation Project
+This project demonstrates the implementation of reusable React components using props and dynamic content rendering. The application follows a component-based architecture and includes a Header, Banner, Button, Gallery, Navigation, and Footer component. Styling is applied using CSS with a focus on consistency, responsiveness, and the CARP design principles (Contrast, Alignment, Repetition, and Proximity).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- Reusable React components
+- Dynamic content passed through props
+- Navigation menu generated from data
+- Reusable Button component with customizable styles
+- Responsive image gallery
+- Consistent visual design and layout
+- Modern hover effects and transitions
 
-In the project directory, you can run:
+## Components
 
-### `npm start`
+### Header
+- Displays the website title.
+- Receives navigation links through props.
+- Includes the Navigation component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Navigation
+- Dynamically renders navigation links using data passed from App.js.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Banner
+- Displays a title and descriptive text.
+- Uses props for dynamic content.
+- Includes two reusable buttons.
 
-### `npm test`
+### Button
+- Reusable component.
+- Accepts button text and button style through props.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Gallery
+- Displays images dynamically using the JavaScript `map()` method.
+- Receives image data through props.
 
-### `npm run build`
+### Footer
+- Displays copyright information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- JavaScript (ES6)
+- JSX
+- CSS3
+- HTML5
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Props Usage
 
-### `npm run eject`
+The application uses props to pass data between components:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Header** receives navigation links.
+- **Nav** receives navigation data and renders links.
+- **Banner** receives title and text content.
+- **Button** receives button text and styling classes.
+- **Gallery** receives an array of images and displays them dynamically.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This demonstrates effective component communication and reusable design patterns.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Design Principles (CARP)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Contrast
+- Strong color contrast between text and backgrounds.
+- Distinct button styles improve usability.
 
-## Learn More
+### Alignment
+- Consistent spacing and layout using Flexbox and CSS Grid.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Repetition
+- Repeated color palette and design elements throughout the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Live Demo
 
-### Code Splitting
+GitHub Pages Link:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## GitHub Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+**Harpreet Kaur**
