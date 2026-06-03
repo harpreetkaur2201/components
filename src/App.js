@@ -2,6 +2,10 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import image1 from './images/image1.jpg';
+import image2 from './images/image2.jpg';
+import image3 from './images/image3.jpg';
+import image4 from './images/image4.jpg';
 
 function App() {
 
@@ -17,12 +21,12 @@ function App() {
     let bannerText =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
-    const galleryImages = [
-        'https://picsum.photos/200?1',
-        'https://picsum.photos/200?2',
-        'https://picsum.photos/200?3',
-        'https://picsum.photos/200?4'
-    ];
+  const galleryImages = [
+    image1,
+    image2,
+    image3,
+    image4
+];
 
     return (
         <>
