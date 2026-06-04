@@ -14,9 +14,7 @@ body {
     line-height: 1.5;
 }
 
-main {
-    flex: 1;
-}
+
 
 .container {
     width: min(1100px, 90%);
@@ -33,6 +31,7 @@ header {
     background: linear-gradient(135deg, #8f3e04, #b85a10);
     padding: 18px 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 38px;
 }
 
 header h1 {
@@ -73,11 +72,11 @@ nav a:hover::after {
 
 .banner {
     text-align: center;
-    padding: 70px 20px 40px;
+    padding: 0px 10px;
 }
 
 .banner h2 {
-    margin-bottom: 14px;
+    margin-bottom: 5px;
     font-size: 32px;
 }
 
@@ -132,7 +131,7 @@ button {
 
 .gallery {
     width: min(1100px, 90%);
-    margin: 50px auto;
+    margin: 60px auto;
     padding: 10px 0;
 }
 
@@ -185,7 +184,6 @@ footer {
     background: linear-gradient(135deg, #8f3e04, #b85a10);
     text-align: center;
     padding: 22px;
-    margin-top: 100px;
     color: white;
     font-size: 14px;
 

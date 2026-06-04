@@ -17,7 +17,7 @@ function App() {
         { index: 3, name: 'Contact', url: '#' }
     ];
 
-    let bannerTitle = 'Be creative';
+    let bannerTitle = '3D Character';
 
     let bannerText =
             'It is a 3D cartoon-style illustration. The image uses smooth shapes, simple features, and bright colors to create a playful digital character look. This style is often used for avatars, apps, websites, and presentations because it feels modern, friendly, and attractive.'
