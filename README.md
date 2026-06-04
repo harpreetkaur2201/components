@@ -11,7 +11,8 @@ This project demonstrates the implementation of reusable React components using 
 - Consistent visual design and layout
 - Modern hover effects and transitions
 
-## [Live Demo](https://harpreetkaur2201.github.io/components/)
+## Live Demo
+[Click Here](https://harpreetkaur2201.github.io/components/)
 
 ## Components
 
